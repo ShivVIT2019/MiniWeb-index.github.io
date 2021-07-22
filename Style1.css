@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+  color: black;
+  background: white;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.navbar-custom {
+  background-color: #5bccf6;
+}
+.navbar {
+  width: 100%;
+  font-family: "Ubuntu", sans-serif;
+  position: fixed;
+}
+.navbar-nav .nav-item .nav-link {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  padding-right: 25px;
+  margin-left: 10px;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  padding-right: 25px;
+  margin-left: 10px;
+}
+.logo {
+  font-size: 35px;
+  font-weight: 500;
+}
+.logo:hover {
+  font-weight: 600;
+}
+.logo a {
+  color: black;
+  text-decoration: none;
+}
+.logo a span {
+  color: white;
+  text-decoration: none;
+}
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+}
+.carousel-caption {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-10%);
+}
+.carousel-caption h1 {
+  font-size: 300%;
+  text-shadow: 1px 1px 15px #000;
+}
+.carousel-caption h3 {
+  font-size: 250%;
+  font-weight: 500;
+  text-shadow: 1px 1px 10px #000;
+  padding-bottom: 1rem;
+}
+.navbar-toggler-icon {
+  color: black;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 768px) {
+  .navbar-collapse {
+    background: white;
+  }
+  .navbar-nav .nav-item .nav-link:hover {
+    color: black;
+  }
+}
+.fa-chevron-left:before {
+  content: "\f137";
+  font-family: "FontAwesome";
+}
+.fa-chevron-right:before {
+  content: "\f138";
+  font-family: "FontAwesome";
+}
+.fa-chevron-right {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 90%;
+}
+.fa-chevron-left {
+  color: white;
+  position: absolute;
+  font-size: 50px;
+  top: 50%;
+  left: 5%;
+}
+footer {
+  width: 100%;
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+}
+footer a {
+  color: #d5d5d5;
+}
+.social a {
+  font-size: 4.5em;
+  padding: 3rem;
+}
+.fa-twitter {
+  color: #3b5998;
+}
+.fa-github {
+  color: red;
+}
+.fa-google-plus-g {
+  color: #dd4b39;
+}
+.fa-linkedin-in {
+  color: #0072b1;
+}
+.card {
+  border-style: solid 1px black;
+  background-color: #5bccf6;
+  margin-bottom: 10px;
+}
+.card-body {
+  color: black;
+}
+.card-body .btn {
+  background: black;
+  color: white;
+}
+.card-body .btn:hover {
+  background: white;
+  color: black;
+}
+.fa-facebook:hover,
+.fa-google-plus-g:hover,
+.fa-linkedin-in:hover,
+.fa-github:hover {
+  color: #d5d5d5;
+}
+@media (max-width: 992px) {
+  .social a {
+    font-size: 4em;
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .carousel-caption {
+    top: 45%;
+  }
+  .carousel-caption h1 {
+    font-size: 350%;
+  }
+  .carousel-caption h3 {
+    font-size: 140%;
+    font-weight: 400;
+    padding-bottom: 0.2rem;
+  }
+  .carousel-caption .btn {
+    font-size: 95%;
+    padding: 8px 14px;
+  }
+  .display-4 {
+    font-size: 200%;
+  }
+  .social a {
+    font-size: 2.5 em;
+    padding: 1.2rem;
+  }
+}
+@media (max-width: 576px) {
+  .carousel-caption {
+    top: 40%;
+  }
+  .carousel-caption h1 {
+    font-size: 250%;
+  }
+  .carousel-caption h3 {
+    font-size: 110%;
+  }
+  .carousel-caption .btn {
+    font-size: 90%;
+    padding: 4px 8px;
+  }
+  .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  }
+  .display-4 {
+    font-size: 160%;
+  }
+  .social a {
+    font-size: 2em;
+    padding: 0.7rem;
+  }
+}
+.exper,
+.cv {
+  background-color: black;
+  color: white;
+}
+.exper:hover,
+.cv:hover {
+  background-color: #5bccf6;
+  color: black;
+}
+.bars {
+  margin-bottom: 15px;
+}
+.info {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+}
+.info span {
+  font-weight: 500;
+  font-size: 18px;
+}
+.line {
+  height: 5px;
+  width: 100%;
+  background-color: lightgrey;
+  position: relative;
+}
+.line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background-color: #5bccf6;
+}
+.python::before,
+.sql::before {
+  width: 75%;
+}
+.java::before,
+.os::before,
+.cn::before {
+  width: 60%;
+}
+.oop::before,
+.dbms::before {
+  width: 70%;
+}
+.cpp::before,
+.ms::before {
+  width: 65%;
+}
+.dsa::before {
+  width: 80%;
+}
+.ml::before,
+.web::before {
+  width: 40%;
+}
